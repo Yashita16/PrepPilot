@@ -40,7 +40,7 @@ const TodayTask = () => {
         </h2>
 
         {/* Task List */}
-        <div className='flex flex-col gap-3 overflow-y-auto h-[25vh] pr-2'>
+        <div className='flex flex-col gap-3 overflow-y-auto h-[25vh] pr-2 '>
 
           {tasks.map((task,index)=>(
             <div
