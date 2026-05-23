@@ -1,6 +1,7 @@
 import React from 'react'
 import SideBar from '../components/SideBar'
 import FilterQuestions from '../components/FilterQuestions'
+import AllQuestions from '../components/AllQuestions'
 
 const PracticeQuestionPage = () => {
   return (
@@ -12,6 +13,7 @@ const PracticeQuestionPage = () => {
       {/* Main Content */}
       <div className='flex-1 p-6'>
         <FilterQuestions />
+        <AllQuestions></AllQuestions>
       </div>
 
     </div>
