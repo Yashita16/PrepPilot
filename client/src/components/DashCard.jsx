@@ -31,36 +31,41 @@ const DashCard = () => {
   ]
 
   return (
-    <div className='grid grid-cols-4 gap-5 mt-6'>
+    <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-6 w-full'>
 
       {cards.map((card, index) => (
 
         <div
           key={index}
-          className='bg-[#2A2455]/70 backdrop-blur-md
-          rounded-2xl p-5 shadow-lg
+          className='bg-[#2A2455]/70 
+          backdrop-blur-md
+          rounded-2xl
+          p-4 md:p-5
+          shadow-lg
           flex items-center gap-4
-          hover:scale-105 hover:shadow-2xl
-          transition-all duration-300 cursor-pointer'
+          hover:scale-105
+          hover:shadow-2xl
+          transition-all duration-300
+          cursor-pointer'
         >
 
           <img
             src={card.icon}
             alt=""
-            className='w-14 h-14 object-contain'
+            className='w-10 h-10 md:w-14 md:h-14 object-contain shrink-0'
           />
 
-          <div>
+          <div className='min-w-0'>
 
-            <p className='text-gray-300 text-sm'>
+            <p className='text-gray-300 text-xs md:text-sm truncate'>
               {card.title}
             </p>
 
-            <h2 className='text-white text-2xl font-bold mt-1'>
+            <h2 className='text-white text-lg md:text-2xl font-bold mt-1'>
               {card.value}
             </h2>
 
-            <p className='text-sm text-gray-400 mt-2'>
+            <p className='text-xs md:text-sm text-gray-400 mt-2'>
               <span className='text-green-400'>
                 ↑ {card.increase}
               </span>{" "}

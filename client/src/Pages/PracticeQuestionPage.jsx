@@ -11,7 +11,11 @@ const PracticeQuestionPage = () => {
       <SideBar />
 
       {/* Main Content */}
-      <div className='flex-1 p-6'>
+      <div className=' ml-[70px]
+      sm:ml-[80px]
+      md:ml-[260px]
+      flex-1
+      p-4'>
         <FilterQuestions />
         <AllQuestions></AllQuestions>
       </div>

@@ -24,7 +24,9 @@ const SideBar = () => {
       bg-[#111827]
       px-3 md:px-5 py-6
       text-white
-      transition-all duration-300 
+      transition-all duration-300 fixed top-0 left-0 overflow-y-auto
+z-50
+shadow-xl
     '>
 
       {/* Logo */}

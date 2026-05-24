@@ -116,7 +116,7 @@ const questions = [
   };
 
   return (
-    <div className="bg-[#13132b] border border-[#2a2a45] rounded-2xl overflow-hidden">
+    <div className="bg-[#13132b] border border-[#2a2a45] rounded-2xl overflow-hidden mt-4">
 
       {/* Header */}
       <div className="px-5 py-4 border-b border-[#2a2a45]">
