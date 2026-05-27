@@ -5,6 +5,7 @@ import DashBoardPage from './Pages/DashBoardPage'
 import PracticeQuestionPage from './Pages/PracticeQuestionPage'
 import ProgressAnalytics from './Pages/ProgressAnalytics'
 import RoadMap from './Pages/RoadMap'
+import LeaderBoard from './Pages/LeaderBoard'
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
         <Route path='/practice-questions' element={<PracticeQuestionPage></PracticeQuestionPage>} ></Route>
         <Route path='/progress' element={<ProgressAnalytics></ProgressAnalytics>} ></Route>
         <Route path='/roadmap' element={<RoadMap></RoadMap>}></Route>
+        <Route path='/leaderboard' element={<LeaderBoard></LeaderBoard>}></Route>
       </Routes>
       
     
